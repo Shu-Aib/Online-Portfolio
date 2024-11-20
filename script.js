@@ -13,7 +13,7 @@ function cancel(){
 const texts = [
     "FULL-STACK DEVELOPER",
     "UX/UI DESIGNER",
-    "MICROSOFT"
+    
    
     
 ]
