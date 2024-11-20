@@ -7,7 +7,6 @@
     font-family: 'Edu Australia VIC WA NT Hand Precursive';
     box-sizing: border-box;
     font-weight: 550;
-
 }
 
 body{
@@ -15,13 +14,14 @@ body{
     height: 100vh;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
-
 }
 
 nav{
     width: 100%;
     height: 10vh;
     position: sticky;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container{
@@ -33,15 +33,15 @@ nav{
 }
 
 .logo{
-    color: rgb(102, 19, 209);
+    color: #ff5c8e; /* Soft Pink */
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0 0 10px #01f7ff;
+    text-shadow: 0 0 15px #ff5c8e;
 }
 
 .logo span{
-    color: #ea00ff;
-    text-shadow: 0 0 10px #ea00ff;
+    color: #00f1dd; /* Neon Teal */
+    text-shadow: 0 0 15px #00f1dd;
 }
 
 .hamburg,
@@ -50,7 +50,7 @@ nav{
     position: absolute;
     right: 15px;
     top: 10px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     display: none;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
@@ -62,7 +62,7 @@ nav{
 .nav-container .links a{
     position: relative;
     font-size: 1.2rem;
-    color: rgb(255, 255, 255);
+    color: #fff;
     margin: 0 20px;
     text-decoration: none;
     font-weight: 550;
@@ -76,7 +76,7 @@ nav{
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #7b0707;
+    background-color: #ff5c8e;
     transition: 0.2s linear;
 }
 
@@ -85,7 +85,7 @@ nav{
 }
 
 .nav-container .links a:hover{
-    color: #00f1dd;
+    color: #00f1dd; /* Neon Teal */
 }
 
 .dropdown{
@@ -96,7 +96,7 @@ nav{
     width: 100%;
     height: auto;
     backdrop-filter: blur(4px) brightness(40%);
-    box-shadow:  0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     transition: 0.2s linear;
 }
 
@@ -111,7 +111,7 @@ nav{
 }
 
 .dropdown .links a:hover{
-    background-color: #ea00ff;
+    background-color: #ff5c8e;
 }
 
 section{
@@ -132,7 +132,7 @@ section{
     height: 80vh;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50px #4e002e;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6); /* Red glow effect */
 }
 
 .main-container .image img{
@@ -160,27 +160,30 @@ section{
 }
 
 .main-container .content{
-    color: rgb(255, 255, 255);
+    color: #fff;
     width: 40%;
     min-height: 100px;
 }
 
 .content h1{
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+    color: #ff5c8e; /* Soft Pink */
+    text-shadow: 0 0 10px #ff5c8e;
 }
 
 .content h1 span{
-    color: #7b0768;
-    text-shadow: 0  0 10px #7b0707;
+    color: #00f1dd; /* Neon Teal */
+    text-shadow: 0 0 10px #00f1dd;
 }
 
 .content .typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
+    color: #ff5c8e; /* Soft Pink */
 }
 
 .content .typewriter-text{
-    color: #00ffea;
+    color: #00f1dd; /* Neon Teal */
     text-shadow: 0 0 10px #09077b;
 }
 
@@ -197,9 +200,9 @@ section{
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    border: 0.2rem solid #7b0768;
+    border: 0.2rem solid #ff5c8e; /* Soft Pink Border */
     border-radius: 50%;
-    color: #7b0768;
+    color: #ff5c8e; /* Soft Pink */
     margin: 5px 15px;
     font-size: 1.5rem;
     transition: 0.2s linear;
@@ -208,15 +211,15 @@ section{
 .social-links i:hover{
     scale: 1.3;
     color: rgb(255, 255, 255);
-    background-color: #f89f9f;
-    filter: drop-shadow(0 0 10px #7b0707);
+    background-color: #ff5c8e; /* Soft Pink Hover */
+    filter: drop-shadow(0 0 10px #ff5c8e);
 }
 
 .content button{
     width: 50%;
     height: 6vh;
     margin: 30px;
-    background-color: #077b32;
+    background-color: #ff5c8e; 
     color: rgb(255, 255, 255);
     border: none;
     outline: none;
@@ -228,11 +231,11 @@ section{
 
 .content button:hover{
     scale: 1.1;
-    color: #7b0707;
-    border: 2px solid #7b0707;
+    color: #ff5c8e; /* Soft Pink */
+    border: 2px solid #ff5c8e;
     background-color: transparent;
     font-weight: 700;
-    box-shadow: 0 0 40px #7b0707;
+    box-shadow: 0 0 40px #ff5c8e;
 }
 
 @media (max-width:884px) {
@@ -290,4 +293,23 @@ section{
     }
 }
 
-
+@keyframes colorChange {
+    0% {
+        color: #ff5c8e; /* Red */
+    }
+    20% {
+        color: #00ff00; /* Green */
+    }
+    40% {
+        color: #ffff00; /* Yellow */
+    }
+    60% {
+        color: #0000ff; /* Blue */
+    }
+    80% {
+        color: #8a2be2; /* Purple */
+    }
+    100% {
+        color: #ff5c8e; /* Red */
+    }
+}
