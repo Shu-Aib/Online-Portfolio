@@ -132,7 +132,7 @@ section{
     height: 80vh;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6); /* Red glow effect */
+    box-shadow: 0 0 50px rgba(0, 225, 255, 0.6); /* Red glow effect */
 }
 
 .main-container .image img{
