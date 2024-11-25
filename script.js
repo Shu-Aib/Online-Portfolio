@@ -11,7 +11,7 @@ function cancel(){
 // Typewriter Effect
 
 const texts = [
-    "FULL-STACK DEVELOPER",
+    "IT SPECIALIST",
     "UX/UI DESIGNER",
     "TEAM PLAYER",
 
