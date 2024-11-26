@@ -246,6 +246,7 @@ section {
     .hamburg,
     .cancel {
         display: block;
+        z-index: 1;
     }
     .main-container .content {
         width: 80%;
@@ -253,6 +254,7 @@ section {
     .main-container .image {
         width: 70%;
         height: auto;
+        z-index: -1;
     }
 }
 
