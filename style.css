@@ -1,30 +1,30 @@
 /* Index */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
-    font-family: 'Edu Australia VIC WA NT Hand Precursive';
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     font-weight: 550;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0); 
 }
 
-nav{
+nav {
     width: 100%;
     height: 10vh;
     position: sticky;
-    background-color: #1f1f1f;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #151515; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
-.nav-container{
+.nav-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,63 +32,63 @@ nav{
     align-items: center;
 }
 
-.logo{
-    color: #ff5c8e; 
+.logo {
+    color: #6c63ff;
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0 0 15px #ff5c8e;
+    text-shadow: 0 0 15px #6c63ff;
 }
 
-.logo span{
-    color: #00f1dd;
-    text-shadow: 0 0 15px #00f1dd;
+.logo span {
+    color: #42e6a4; 
+    text-shadow: 0 0 15px #42e6a4;
 }
 
 .hamburg,
-.cancel{
+.cancel {
     cursor: pointer;
     position: absolute;
     right: 15px;
     top: 10px;
-    color: #fff;
+    color: #ffffff;
     display: none;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
-.nav-container .links{
+.nav-container .links {
     display: flex;
 }
 
-.nav-container .links a{
+.nav-container .links a {
     position: relative;
     font-size: 1.2rem;
-    color: #fff;
+    color: #ffffff;
     margin: 0 20px;
     text-decoration: none;
     font-weight: 550;
     transition: 0.3s linear;
 }
 
-.nav-container .links a::before{
+.nav-container .links a::before {
     position: absolute;
     content: "";
     bottom: -3px;
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #ff5c8e;
+    background-color: #6c63ff; 
     transition: 0.2s linear;
 }
 
-.nav-container .links a:hover::before{
+.nav-container .links a:hover::before {
     width: 100%;
 }
 
-.nav-container .links a:hover{
-    color: #00f1dd; 
+.nav-container .links a:hover {
+    color: #42e6a4; 
 }
 
-.dropdown{
+.dropdown {
     z-index: 100;
     position: absolute;
     top: 0;
@@ -100,9 +100,9 @@ nav{
     transition: 0.2s linear;
 }
 
-.dropdown .links a{
+.dropdown .links a {
     display: flex;
-    color: rgb(255, 250, 250);
+    color: #ffffff;
     text-decoration: none;
     justify-content: center;
     padding: 15px 0;
@@ -110,16 +110,16 @@ nav{
     transition: 0.2s linear;
 }
 
-.dropdown .links a:hover{
-    background-color: #ff5c8e;
+.dropdown .links a:hover {
+    background-color: #6c63ff;
 }
 
-section{
+section {
     width: 100%;
     height: 90vh;
 }
 
-.main-container{
+.main-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -127,100 +127,98 @@ section{
     align-items: center;
 }
 
-.main-container .image{
+.main-container .image {
     width: 500px;
     height: 80vh;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50px rgba(0, 225, 255, 0.6);
+    box-shadow: 0 0 50px rgba(108, 99, 255, 0.6);
 }
 
-.main-container .image img{
+.main-container .image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.main-container .image:hover{
+.main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;
 }
 
 @keyframes animate {
-    0%{
+    0% {
         scale: 1;
     }
-    
-    50%{
+    50% {
         scale: 1.05;
     }
-    
-    100%{
+    100% {
         scale: 1;
     }
 }
 
-.main-container .content{
-    color: #fff;
+.main-container .content {
+    color: #ffffff;
     width: 40%;
     min-height: 100px;
 }
 
-.content h1{
+.content h1 {
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
-    color: #ff5c8e;
-    text-shadow: 0 0 10px #ff5c8e;
+    color: #6c63ff;
+    text-shadow: 0 0 10px #6c63ff;
 }
 
-.content h1 span{
-    color: #00f1dd;
-    text-shadow: 0 0 10px #00f1dd;
+.content h1 span {
+    color: #42e6a4;
+    text-shadow: 0 0 10px #42e6a4;
 }
 
-.content .typewriter{
+.content .typewriter {
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
-    color: #ff5c8e;
+    color: #CDB4DB;
 }
 
-.content .typewriter-text{
-    color: #00f1dd;
-    text-shadow: 0 0 10px #09077b;
+.content .typewriter-text {
+    color: #6c63ff;
+    text-shadow: 0 0 10px #42e6a4;
 }
 
-.content p{
-    font-size: clamp(0.4rem , 0.2rem + 9vw, 1rem);
+.content p {
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
     line-height: 1.3rem;
 }
 
-.social-links i{
+.social-links i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    border: 0.2rem solid #ff5c8e; 
+    border: 0.2rem solid #6c63ff; /* Blue border */
     border-radius: 50%;
-    color: #ff5c8e; 
+    color: #6c63ff; 
     margin: 5px 15px;
     font-size: 1.5rem;
     transition: 0.2s linear;
 }
 
-.social-links i:hover{
+.social-links i:hover {
     scale: 1.3;
-    color: rgb(255, 255, 255);
-    background-color: #ff5c8e;
-    filter: drop-shadow(0 0 10px #ff5c8e);
+    color: #000000;
+    background-color: #6c63ff;
+    box-shadow: 0 0 10px #6c63ff;
 }
 
-.content button{
+.content button {
     width: 50%;
     height: 6vh;
     margin: 30px;
-    background-color: #ff5c8e; 
-    color: rgb(255, 255, 255);
+    background-color: #42e6a4; /* Teal */
+    color: #ffffff;
     border: none;
     outline: none;
     font-size: 120%;
@@ -229,87 +227,11 @@ section{
     transition: 0.2s linear;
 }
 
-.content button:hover{
+.content button:hover {
     scale: 1.1;
-    color: #ff5c8e;
-    border: 2px solid #ff5c8e;
+    color: #42e6a4;
+    border: 2px solid #42e6a4;
     background-color: transparent;
     font-weight: 700;
-    box-shadow: 0 0 40px #ff5c8e;
-}
-
-@media (max-width:884px) {
-    nav .logo{
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nav-container .links{
-        display: none;
-    }
-
-    .hamburg,
-    .cancel{
-        display: block;
-    }
-
-    .main-container .content{
-        width: 80%;
-    }
-
-    .social-links i{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-
-    .main-container .image{
-        z-index: -1;
-        width: 50%;
-        height: 60%;
-    }
-}
-
-@media (max-width:440px){
-    .main-container .image{
-        width: 50%;
-        height: 60%;
-        margin-bottom: 0px;
-    }
-
-    .main-container .content{
-        width: 80%;
-    }
-
-    .main-container button{
-        margin-top: 15px;
-    }
-}
-
-@keyframes colorChange {
-    0% {
-        color: #ff5c8e;
-    }
-    20% {
-        color: #00ff00; 
-    }
-    40% {
-        color: #ffff00; 
-    }
-    60% {
-        color: #0000ff;
-    }
-    80% {
-        color: #8a2be2; 
-    }
-    100% {
-        color: #ff5c8e; 
-    }
+    box-shadow: 0 0 40px #42e6a4;
 }

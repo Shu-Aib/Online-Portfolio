@@ -14,10 +14,10 @@ const texts = [
     "IT SPECIALIST",
     "UX/UI DESIGNER",
     "TEAM PLAYER",
-
-    
-   
-    
+    "",
+    "",
+    "",
+    "",
 ]
 
 let speed  =100;
